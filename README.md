@@ -127,7 +127,12 @@ brew install bat
 
 ### On Windows
 
-You can download pre-built binaries from the [Release page](https://github.com/sharkdp/bat/releases).
+You can download pre-built binaries from the [Release page](https://github.com/sharkdp/bat/releases),
+or install it with [scoop](https://scoop.sh/):
+
+```bash
+scoop install bat
+```
 
 ### From binaries
 
@@ -243,6 +248,15 @@ terminals with truecolor support.
 Make sure that your truecolor terminal sets the `COLORTERM` variable to either `truecolor` or
 `24bit`. Otherwise, `bat` will not be able to determine whether or not 24-bit escape sequences
 are supported (and fall back to 8-bit colors).
+
+### Line numbers and grid are hardly visible
+
+Please try a different theme (see `bat --list-themes` for a list). The `OneHalfDark` and
+`OneHalfLight` themes provide grid and line colors that are brighter.
+
+### Error when compiling: "cannot find -lz"
+
+Please install the `zlib-devel` package and try again.
 
 ## Development
 
