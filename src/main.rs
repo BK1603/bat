@@ -16,9 +16,11 @@ extern crate console;
 extern crate directories;
 extern crate git2;
 extern crate syntect;
+extern crate wild;
 
 mod app;
 mod assets;
+mod clap_app;
 mod controller;
 mod decorations;
 mod diff;

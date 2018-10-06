@@ -12,6 +12,7 @@ exclude = [
     "assets/syntaxes/*",
     "assets/themes/*",
 ]
+build = "build.rs"
 
 [dependencies]
 atty = "0.2.2"
@@ -20,6 +21,7 @@ ansi_colours = "^1.0"
 console = "0.6"
 directories = "1.0"
 lazy_static = "1.0"
+wild = "2.0"
 
 [dependencies.git2]
 version = "0.7"
@@ -43,3 +45,6 @@ features = []
 
 [dev-dependencies]
 tempdir = "0.3"
+
+[build-dependencies]
+clap = "2.32"
